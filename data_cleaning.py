@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from json import load
 from sklearn.linear_model import RidgeClassifier
 from sklearn import metrics
 
@@ -12,6 +13,7 @@ KEY OBSERVATIONS
 2. 66 percent accuracy of the ridge classifier for marital status missing values (tried with employment, gender, education)
 3. isolation adults has 19000 missing values - remove column
 4. isolation children has 20000 missing values - remove column (might need)
+5. OECD_people_2 is dropped as trust in personal relations dont act as a contributing factor to COVID19
 '''
 
 def clean(df):
@@ -51,8 +53,38 @@ def clean(df):
     #pred = lr.predict(dummy_df)
     #print(metrics.accuracy_score(y, pred))
 
+    #
+    df.drop(["Dem_isolation_adults", "OECD_people_2"], axis=1, inplace=True)
+
     return df
 
-df = pd.read_csv("COVIDiSTRESS_April_27_clean.csv", encoding= 'unicode_escape')
-df = clean(df)
-print(df['Dem_edu'].head(50))
+def selection_alteration(df):
+    # Replacing country with their latitudes and longitudes to reduce encoding dimensionality and introducing grographic significance
+    with open("country-codes-lat-long-alpha3.json", "r") as f:
+        country_pos = pd.DataFrame().from_dict(load(f)["ref_country_codes"])[["country", "latitude", "longitude"]]
+    df = df.merge(country_pos, how="left", left_on="Country", right_on="country")
+
+    # Selecting only those columns that are required
+    df_columns = ["PSS10_avg", "latitude", "longitude", "Trust_countrymeasure", "SPS_avg"]
+    df_columns += [c for c in df.columns if "Dem_" in c]
+    df_columns += [c for c in df.columns if "Corona" in c]
+    df_columns += [c for c in df.columns if "Expl_Distress" in c]
+    try:
+        df_columns.remove("Expl_Distress_txt")
+    except ValueError:
+        pass
+    df_columns += [c for c in df.columns if "Compliance" in c]
+    df = df[df_columns]
+
+    # Calculating mean compliance
+    compliance = df[[i for i in df_columns if "Compliance" in i]].mean(axis="columns")
+    df.drop([i for i in df_columns if "Compliance" in i], axis="columns", inplace=True)
+    df["Compliance"] = compliance
+
+    return df
+
+if __name__=="__main__":
+    df = pd.read_csv("COVIDiSTRESS_April_27_clean.csv", encoding= 'unicode_escape')
+    df = clean(df)
+    df = selection_alteration(df)
+    print(df['Dem_edu'].head(50))
