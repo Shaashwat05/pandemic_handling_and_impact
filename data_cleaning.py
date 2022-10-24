@@ -14,6 +14,8 @@ KEY OBSERVATIONS
 3. isolation adults has 19000 missing values - remove column
 4. isolation children has 20000 missing values - remove column (might need)
 5. OECD_people_2 is dropped as trust in personal relations dont act as a contributing factor to COVID19
+6. Replacing country with their latitudes and longitudes to reduce encoding dimensionality and introducing grographic significance
+7. Mean of each of PSS10, loneliness, SPS and compliance is considered instead of each of the attributes.
 '''
 
 def clean(df):
@@ -65,7 +67,7 @@ def selection_alteration(df):
     df = df.merge(country_pos, how="left", left_on="Country", right_on="country")
 
     # Selecting only those columns that are required
-    df_columns = ["PSS10_avg", "latitude", "longitude", "Trust_countrymeasure", "SPS_avg"]
+    df_columns = ["PSS10_avg", "latitude", "longitude", "Trust_countrymeasure", "SPS_avg", "lon_avg"]
     df_columns += [c for c in df.columns if "Dem_" in c]
     df_columns += [c for c in df.columns if "Corona" in c]
     df_columns += [c for c in df.columns if "Expl_Distress" in c]
