@@ -55,7 +55,7 @@ def clean(df):
     #pred = lr.predict(dummy_df)
     #print(metrics.accuracy_score(y, pred))
 
-    #
+    # Dropping Additional Columns after preprocessing
     df.drop(["Dem_isolation_adults", "OECD_people_2"], axis=1, inplace=True)
 
     return df
