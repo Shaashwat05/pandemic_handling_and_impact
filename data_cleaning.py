@@ -52,6 +52,10 @@ def clean(df):
     lr = RidgeClassifier()
     lr.fit(df[['Dem_age', 'Dem_dependents']],y)
     df.loc[df['Dem_maritalstatus'].isna(), 'Dem_maritalstatus'] = lr.predict(df[['Dem_age', 'Dem_dependents']])[df['Dem_maritalstatus'].isna()]
+    df.loc[df['Dem_maritalstatus'] == 1, 'Dem_maritalstatus'] = "Single"
+    df.loc[df['Dem_maritalstatus'] == 3, 'Dem_maritalstatus'] = "Married/cohabiting"
+    df.loc[df['Dem_maritalstatus'] == 2, 'Dem_maritalstatus'] = "Other or would rather not say"
+    df.loc[df['Dem_maritalstatus'] == 0, 'Dem_maritalstatus'] = "Divorced/widowed"
     #pred = lr.predict(dummy_df)
     #print(metrics.accuracy_score(y, pred))
 
@@ -107,7 +111,7 @@ def selection_alteration(df):
 
 
 if __name__=="__main__":
-    df = pd.read_csv("COVIDiSTRESS_April_27_clean.csv", encoding= 'unicode_escape')
+    df = pd.read_csv("COVIDiSTRESS_May_30_cleaned.csv", encoding= 'unicode_escape')
     df = clean(df)
     df = selection_alteration(df)
     print(df.head())
