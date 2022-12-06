@@ -8,55 +8,55 @@ Covid -19 has affected the majority of our livelihoods in the past 2.5 years. In
 ![Project Workflow](https://github.com/Shaashwat05/pandemic_handling_and_impact]/blob/main/Workflow.png?raw=true)
 
 ## EDA
-1. EDA.ipynb
-  Datasets Used: 
-    a. COVIDiSTRESS_April_27.csv
-    b. COVIDiSTRESS_May_30.csv
-    c. COVIDiSTRESS_June_17.csv
-  EDA Methods:
-    a. Correlation Analysis
-    b. Pairplots
-    c. Distribution Analysis (Age)
-    d. Histograms
-2. EDA.twb
-  Datasets Used: 
-     a. COVIDiSTRESS_April_27.csv
-  EDA Methods: 
-    a. Age Distribution - histogram
-    b. Employment Status - Pie Chart
-    c. Gender Distribution - Count Plot
-    d. Education Distribution - Pie Chart
-    e. Geographical Distribution - World Map
-    f. Gender vs Stress - Heatmap
-    g. Age vs Stress - Heatmap
-    h. Loneliness vs Stress - Line Plot
+1. EDA.ipynb <br  />
+  Datasets Used:   <br  />
+    a. COVIDiSTRESS_April_27.csv <br  />
+    b. COVIDiSTRESS_May_30.csv <br  />
+    c. COVIDiSTRESS_June_17.csv <br  />
+  EDA Methods: <br  />
+    a. Correlation Analysis <br  />
+    b. Pairplots <br  />
+    c. Distribution Analysis (Age) <br  />
+    d. Histograms <br  />
+2. EDA.twb <br  />
+  Datasets Used: <br  />
+     a. COVIDiSTRESS_April_27.csv <br  />
+  EDA Methods: <br  />
+    a. Age Distribution - histogram <br  />
+    b. Employment Status - Pie Chart <br  />
+    c. Gender Distribution - Count Plot <br  />
+    d. Education Distribution - Pie Chart <br  />
+    e. Geographical Distribution - World Map <br  />
+    f. Gender vs Stress - Heatmap <br  />
+    g. Age vs Stress - Heatmap <br  />
+    h. Loneliness vs Stress - Line Plot <br  />
 
 ## Data Cleaning & Feature Engineering
-1. data_preparation.py
-2. scaling.ipynb
+1. data_preparation.py <br  />
+2. scaling.ipynb <br  />
 
 ## Models & Results
-1. model.ipynb - Deep neural network model
-2. shap.ipynb - SHAP implementation for extracting feature importances
-3. XGBoost.ipynb - XGBoost model and feature importance plot
-4. XGBoost.html 
+1. model.ipynb - Deep neural network model <br  />
+2. shap.ipynb - SHAP implementation for extracting feature importances <br  />
+3. XGBoost.ipynb - XGBoost model and feature importance plot <br  />
+4. XGBoost.html  <br  />
 
 ## Utilities & Resources
-1. country-codes-lat-long-alpha3.json - json file containing following information for all countries:
-  a. ISO 3166-1 alpha-3 codes
-  b. longitude and latitude (average)
-  c. numeric codes
-  d. country names
-  e. alpha-2 codes
-2. var/ - pickle dumps of encoded/scaled features
-  a. age_scaler.pkl
-  b. ohe_empl.pkl
-  c. ohe_isol.pkl
-  d. ohe_marital.pkl
-3. resources/ - SHAP feature importance (images)
-  a. countries/
-  b. world_importance_nn.png
+1. country-codes-lat-long-alpha3.json - json file containing following information for all countries: <br  />
+  a. ISO 3166-1 alpha-3 codes <br  />
+  b. longitude and latitude (average) <br  />
+  c. numeric codes <br  />
+  d. country names <br  />
+  e. alpha-2 codes <br  />
+2. var/ - pickle dumps of encoded/scaled features <br  />
+  a. age_scaler.pkl <br  />
+  b. ohe_empl.pkl <br  />
+  c. ohe_isol.pkl <br  />
+  d. ohe_marital.pkl <br  />
+3. resources/ - SHAP feature importance (images) <br  />
+  a. countries/ <br  />
+  b. world_importance_nn.png <br  />
 
 ## Analysis & Visualization
-1. world_stress_heatmap.ipynb - World Map with Average Stress Values Plotted for Each Country
-2. Important_Features.ipynb - Pandemic Preparedness: Primary Source of Stress for Each Country
+1. world_stress_heatmap.ipynb - World Map with Average Stress Values Plotted for Each Country <br  />
+2. Important_Features.ipynb - Pandemic Preparedness: Primary Source of Stress for Each Country <br  />
