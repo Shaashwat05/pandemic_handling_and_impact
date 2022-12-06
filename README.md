@@ -5,23 +5,23 @@ Covid -19 has affected the majority of our livelihoods in the past 2.5 years. In
 
 ## Workflow
 
-![Project Workflow](https://github.com/Shaashwat05/pandemic_handling_and_impact]/blob/main/Workflow.png?raw=true)
+![Project Workflow](./Workflow.png?raw=true)
 
 ## EDA
 1. EDA.ipynb <br  />
-  Datasets Used:   <br  />
+  **Datasets Used:**   <br  />
     a. COVIDiSTRESS_April_27.csv <br  />
     b. COVIDiSTRESS_May_30.csv <br  />
     c. COVIDiSTRESS_June_17.csv <br  />
-  EDA Methods: <br  />
+  **EDA Methods:** <br  />
     a. Correlation Analysis <br  />
     b. Pairplots <br  />
     c. Distribution Analysis (Age) <br  />
     d. Histograms <br  />
 2. EDA.twb <br  />
-  Datasets Used: <br  />
+  **Datasets Used:** <br  />
      a. COVIDiSTRESS_April_27.csv <br  />
-  EDA Methods: <br  />
+  **EDA Methods:** <br  />
     a. Age Distribution - histogram <br  />
     b. Employment Status - Pie Chart <br  />
     c. Gender Distribution - Count Plot <br  />
