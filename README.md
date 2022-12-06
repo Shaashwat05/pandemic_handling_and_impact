@@ -10,26 +10,26 @@ Covid -19 has affected the majority of our livelihoods in the past 2.5 years. In
 ## EDA
 1. EDA.ipynb <br  />
   **Datasets Used:**   <br  />
-    a. COVIDiSTRESS_April_27.csv <br  />
-    b. COVIDiSTRESS_May_30.csv <br  />
-    c. COVIDiSTRESS_June_17.csv <br  />
+     a. COVIDiSTRESS_April_27.csv <br  />
+     b. COVIDiSTRESS_May_30.csv <br  />
+     c. COVIDiSTRESS_June_17.csv <br  />
   **EDA Methods:** <br  />
-    a. Correlation Analysis <br  />
-    b. Pairplots <br  />
-    c. Distribution Analysis (Age) <br  />
-    d. Histograms <br  />
+     a. Correlation Analysis <br  />
+     b. Pairplots <br  />
+     c. Distribution Analysis (Age) <br  />
+     d. Histograms <br  />
 2. EDA.twb <br  />
   **Datasets Used:** <br  />
-     a. COVIDiSTRESS_April_27.csv <br  />
+      a. COVIDiSTRESS_April_27.csv <br  />
   **EDA Methods:** <br  />
-    a. Age Distribution - histogram <br  />
-    b. Employment Status - Pie Chart <br  />
-    c. Gender Distribution - Count Plot <br  />
-    d. Education Distribution - Pie Chart <br  />
-    e. Geographical Distribution - World Map <br  />
-    f. Gender vs Stress - Heatmap <br  />
-    g. Age vs Stress - Heatmap <br  />
-    h. Loneliness vs Stress - Line Plot <br  />
+     a. Age Distribution - histogram <br  />
+     b. Employment Status - Pie Chart <br  />
+     c. Gender Distribution - Count Plot <br  />
+     d. Education Distribution - Pie Chart <br  />
+     e. Geographical Distribution - World Map <br  />
+     f. Gender vs Stress - Heatmap <br  />
+     g. Age vs Stress - Heatmap <br  />
+     h. Loneliness vs Stress - Line Plot <br  />
 
 ## Data Cleaning & Feature Engineering
 1. data_preparation.py <br  />
