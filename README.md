@@ -5,6 +5,10 @@ Covid -19 has affected the majority of our livelihoods in the past 2.5 years. In
 
 ## Workflow
 
+#### Flow of Code implementation
+![Project Workflow](./resources/implementation_flow.png?raw=true)
+
+#### Logical Workflow
 ![Project Workflow](./resources/Workflow.png?raw=true)
 
 ## EDA
