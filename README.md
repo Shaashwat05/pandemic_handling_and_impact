@@ -11,8 +11,8 @@ Covid -19 has affected the majority of our livelihoods in the past 2.5 years. In
 #### Logical Workflow
 ![Project Workflow](./resources/Workflow.png?raw=true)
 
-## Data Import
-data.py
+## Data Import 
+data.py (Run this file to download the data)
 
 ## EDA
 1. EDA.ipynb <br  />
