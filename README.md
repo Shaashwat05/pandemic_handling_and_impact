@@ -39,7 +39,6 @@ Covid -19 has affected the majority of our livelihoods in the past 2.5 years. In
 1. model.ipynb - Deep neural network model <br  />
 2. shap.ipynb - SHAP implementation for extracting feature importances <br  />
 3. XGBoost.ipynb - XGBoost model and feature importance plot <br  />
-4. XGBoost.html  <br  />
 
 ## Utilities & Resources
 1. country-codes-lat-long-alpha3.json - json file containing following information for all countries: <br  />
