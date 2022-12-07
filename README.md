@@ -1,4 +1,4 @@
-# pandemic_handling_and_impact
+# Pandemic Handling and Impact
 
 ## Overview
 Covid -19 has affected the majority of our livelihoods in the past 2.5 years. In fact, every once in a while we suffer from pandemics that threaten life on earth. Usually, we tend to ignore such situations until we have been directly or indirectly affected. We assume that the healthcare industry will develop a vaccine, and the government will create suitable policies to localize the spread, but usually, the handling could be smoother. In this project, we aim to answer questions that pertain not to COVID in terms of weekly/monthly statistics but as a Pandemic. We aim to analyze and comment on the psychological impact that the pandemic of COVID-19 has had on the world. Using Explainable AI, we extract the importance of factors contributing to stress and give an overview of what a country needs to improve on, to better handle its next pandemic.
