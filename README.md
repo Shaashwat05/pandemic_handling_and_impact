@@ -5,7 +5,7 @@ Covid -19 has affected the majority of our livelihoods in the past 2.5 years. In
 
 ## Workflow
 
-![Project Workflow](./Workflow.png?raw=true)
+![Project Workflow](./resources/Workflow.png?raw=true)
 
 ## EDA
 1. EDA.ipynb <br  />
