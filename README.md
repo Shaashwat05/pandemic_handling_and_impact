@@ -11,11 +11,14 @@ Covid -19 has affected the majority of our livelihoods in the past 2.5 years. In
 #### Logical Workflow
 ![Project Workflow](./resources/Workflow.png?raw=true)
 
+## Data Import
+data.py
+
 ## EDA
 1. EDA.ipynb <br  />
   **Datasets Used:**   <br  />
      a. COVIDiSTRESS_April_27.csv <br  />
-     b. COVIDiSTRESS_May_30.csv <br  />
+     b. COVIDiSTRESS_May_30_cleaned_final.csv <br  />
      c. COVIDiSTRESS_June_17.csv <br  />
   **EDA Methods:** <br  />
      a. Correlation Analysis <br  />
