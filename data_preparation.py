@@ -6,9 +6,6 @@ from sklearn import metrics
 import pickle
 
 '''
-3. Isolation - 1000 NA values
-'''
-'''
 KEY OBSERVATIONS
 1. Risk group column highly biased - 77k yes, 27k no, 9k not sure 
 2. 66 percent accuracy of the ridge classifier for marital status missing values (tried with employment, gender, education)
